@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Sdvor"
         mc:Ignorable="d"
         Title="Test" Height="800" Width="1000">
-    
-    <Frame Source="/Pages/Page1.xaml" Background="White" NavigationUIVisibility="Hidden" />
+
+    <Frame Source="/Pages/MainPage.xaml" Background="White" NavigationUIVisibility="Hidden" />
     
 </Window>
