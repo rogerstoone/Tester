@@ -80,7 +80,8 @@
                 Click="OpenTextFile"
                 Grid.Row="2"
                 Grid.Column="2"
-                BorderThickness="3" Margin="80,149,40,42"/>
+                BorderThickness="3" 
+                Margin="80,149,40,42"/>
 
     </Grid>
 </Page>
