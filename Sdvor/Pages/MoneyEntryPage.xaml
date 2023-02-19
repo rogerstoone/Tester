@@ -1,0 +1,90 @@
+﻿<Page x:Class="Sdvor.MoneyEntryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="MoneyEntryPage">
+    
+    <Grid Background="White">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Внесение в операционную кассу" 
+               Grid.Row="0" 
+               Grid.ColumnSpan="2"
+               x:Name="operationName"
+               HorizontalAlignment="Left"
+               HorizontalContentAlignment="Center"
+               VerticalAlignment="Top" 
+               FontSize="40" 
+               Margin="193,10,0,0"/>
+
+        <TextBlock Text="Сумма внесения:" 
+                   Grid.Row="1"
+                   FontSize="40"
+                   TextAlignment="Center"
+                   Margin="0,33,0,0" 
+                   Height="64" 
+                   Width="354" 
+                   VerticalAlignment="Top"/>
+
+        <TextBlock Text="Инструкция:"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center"
+                   TextAlignment="Center"
+                   Margin="0,120,0,0" 
+                   FontSize="35" 
+                   Width="372"/>
+
+        <TextBlock Text="Впишите в поле сумму внесения и нажмите Ок"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center"
+                   TextAlignment="Center"
+                   Margin="0,183,0,0" 
+                   FontSize="35" 
+                   Width="838"/>
+
+        <TextBox x:Name="entrySumText"
+                 PreviewTextInput="InputFilter"
+                 Grid.Row="1" 
+                 Grid.Column="0" 
+                 FontSize="30"
+                 BorderThickness="3"
+                 BorderBrush="Gray"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 MaxLength="15" 
+                 Margin="38,122,38,103"/>
+
+        <Button Grid.Column="0"
+                Click="ExitClick"
+                Grid.Row="0"
+                Content="Назад"
+                FontSize="20"
+                Width="85" 
+                Height="47" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="11,10,0,0"/>
+        
+        <Button Grid.Column="1"
+                Grid.Row="1"
+                Click="SaveSumClick"
+                Content="Ок"
+                Margin="81,122,81,103" 
+                FontSize="40"/>
+        
+    </Grid>
+</Page>
